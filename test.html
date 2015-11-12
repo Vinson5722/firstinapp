@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span>第一保</span><br></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a>宏燁資訊</a>
+                        </li>
+                        <li>
+                            <a href="menu.html"><i class="fa fa-home fa-fw"></i>首頁</a>
+                        </li>
+                        <li>
+                            <a href="home.html"><i class="fa fa-sign-out fa-fw"></i>登出系統</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse"></div>
+            <!--/.nav-collapse -->
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="myTab" class="nav nav-pills">
+                            <li>
+                                <a href="#" data-toggle="tab" onclick="javascript:history.back();"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i> 回上頁</a>
+                            </li>
+                            <li class="active">
+                                <a href="#base" data-toggle="tab">基本資料</a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#ins" data-toggle="tab">保險內容</a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#claim" data-toggle="tab">理賠記錄</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-danger" style="color:#FFFFFF;" onclick="MM_goToURL('parent','claim_input.html');return document.MM_returnValue"
+                                data-toggle="tab">理賠受理<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-danger">※客戶保單資料屬於個人隱私，未經授權請勿任意揭露或使用，以免觸法！</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table" border="1">
+                            <thead>
+                                <tr class="bg-primary">
+                                    <th colspan="4">被保險人基本資料</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr class="bg-primary">
+                                    <td colspan="4">保險標的物</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

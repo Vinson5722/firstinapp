@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../icon/firstins.ico">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>第一保 員工專區</title>
+    <!-- TemplateEndEditable -->
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/navbar-static-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+
+    <!-- Static navbar -->
+    <div class="navbar-custom navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" >第一保</a>
+        </div>
+		<div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+			<li class="navbar-text"><span class="glyphicon glyphicon-user"></span> 使用者：<span style="color:#FFFF33">林大鈞</span></li>
+			<li class="navbar-text"><span class="glyphicon glyphicon-time"></span> 登入時間：<span style="color:#FFFF33">103/09/22 09:58:50</span> , <span style="color:#FFFF33">67</span> 分鐘後,自動登出</li>
+            <li class="btn-success loginbtn"><a href="../login_home.html"><span class="glyphicon glyphicon-home"></span> 回首頁</a></li>
+            <li class="btn-info loginbtn"><a href="#"><span class="glyphicon glyphicon-lock"></span> 修改密碼</a></li>
+            <li class="btn-warning loginbtn"><a href="../login.html"><span class="glyphicon glyphicon-share-alt"></span> 登出</a></li>
+          </ul>
+		</div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left" >
+
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 線上簽到退系統</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/FL3M0101.do"><span class="glyphicon glyphicon-minus"></span> 線上簽到退</a></li>
+				<li><a href="/kyc/FL3M0201.do"><span class="glyphicon glyphicon-minus"></span> 出勤記錄查詢</a></li>
+				<li><a href="/kyc/FL3M0401.do"><span class="glyphicon glyphicon-minus"></span> 簽到退異常簽核</a></li>
+				</ul>
+			</li>
+			<li class="divider-vertical"></li>
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 線上請假系統</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/FL1M0101.do">員工請假作業</a></li>
+				<li><a href="/kyc/FL1M0201.do">異常處理申請</a></li>
+				<li><a href="/kyc/FL1I0301.do">假單修改/查詢</a></li>
+				<li><a href="/kyc/FL1I0401.do">當日請假查詢</a></li>
+				<li><a href="/kyc/FL1M0501.do">主管簽核作業</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 線上報價系統</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/QT2M0201.do">報價查詢管理作業</a></li>
+				<li><a href="/kyc/QT1M0201.do">車險速算作業</a></li>
+				<li><a href="/kyc/QT1M0301.do">汽車險報價作業</a></li>
+				<li><a href="/kyc/QT1M0401.do">機車險報價作業</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 各項費用查詢</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/NC1I0201.do">車馬費所得查詢</a></li>
+				<li><a href="/kyc/NC1I0301.do">費用給付查詢</a></li>
+				<li><a href="/kyc/NC1I0401.do">車馬費核發明細查詢</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 客戶管理系統</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WB3I0101.do">客戶資料查詢</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 保單管理系統</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WB4I0101.do">保單查詢</a></li>
+				<li><a href="/kyc/WB4I0201.do">續保單列印</a></li>
+				<li><a href="/kyc/WB4I0251.do">傷健險續保單列印</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 保費管理系統</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WB8M010.do">保費查詢作業</a></li>
+				<li><a href="/kyc/WB8M020.do">繳款帳號查詢作業</a></li>
+				<li><a href="/kyc/WB8M050.do">銀行通路繳款單列印</a></li>
+				<li><a href="/kyc/WB8M060.do">銀行通路繳款單查詢</a></li>
+				<li><a href="/kyc/WB8M070.do">傷健險扣款失敗查詢作業</a></li>
+				<li><a href="/kyc/WB8I081.do">網銀資料查詢</a></li>
+				<li><a href="/kyc/WB8M080.do">線上繳費作業</a></li>
+				<li><a href="/kyc/WB8M090.do">處理編號查詢作業</a></li>
+				<li><a href="/kyc/WB8M100.do">彙總編號查詢作業</a></li>
+				<li><a href="/kyc/WB8M130.do">台企銀繳款單列印</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 下載區</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WB6M0102.do">員工下載區</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 個人資料查詢</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WB9M010.do">訓練記錄查詢</a></li>
+				<li><a href="/kyc/WB5M0401.do">個人資料維護</a></li>
+				<li><a href="/kyc/NC1I0601.do">補充保費查詢</a></li>
+				<li><a href="/kyc/WB5M0901.do">名片申請作業</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 其它</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WB5I0201.do">保費/等級查詢</a></li>
+				<li><a href="/kyc/WB5I0301.do">資訊室信箱</a></li>
+				<li><a href="/kyc/WB5M1101.do">AS/400帳號解鎖作業</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 後送作業</a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="/kyc/WM1M0201.do">查詢回報作業</a></li>
+				</ul>
+			</li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-expand"></span> 車險理賠管理系統</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../claim_index.htm">理賠報案作業</a></li>
+                <li><a href="../claim_query.htm">理賠維護作業</a></li>
+                <li><a href="../claim_agent_setting.htm">理賠人員維護作業</a></li>
+				<!--選單分項作法，先隱藏起來 -->
+                <li class="divider" style="display:none"></li>
+                <li class="dropdown-header" style="display:none">Nav header</li>
+                <li style="display:none"><a href="#">Separated link</a></li>
+                <li style="display:none"><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	
+<div class="container">
+<!-- TemplateBeginEditable name="EditRegion1" -->EditRegion1<!-- TemplateEndEditable -->
+</div>
+
+
+</body>
+</html>

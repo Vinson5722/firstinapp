@@ -1,0 +1,392 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="js/jquery.2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.3.3.4.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--link href="css/pingendov4.css" rel="stylesheet" type="text/css"-->
+    <link href="css/pingendo.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="icon/firstins.ico">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>第一保 員工專區</title>
+    <!-- InstanceEndEditable -->
+    <!-- Bootstrap core CSS <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-static-top.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script-->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/JavaScript">
+      <!--
+                                                            function MM_goToURL() { //v3.0
+                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                            }
+                                                            //-->
+    </script>
+    <style>
+      #myTabContent #group1 span {
+              width:86px;
+              }
+              #myTabContent #group2 span {
+              width:127px;
+              }
+              #myTabContent .input-group {
+              width:100%;
+              }
+    </style>
+    <!-- InstanceEndEditable -->
+  </head><body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>理賠報案作業</span><br></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a>登入人員名稱</a>
+            </li>
+            <li>
+              <a href="menu.html"><i class="fa fa-home fa-fw"></i>首頁</a>
+            </li>
+            <li>
+              <a href="home.html"><i class="fa fa-sign-out fa-fw"></i>登出系統</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-collapse collapse"></div>
+      <!--/.nav-collapse -->
+    </div>
+    <!-- Static navbar -->
+    <div class="section  text-center" style="background-color:rgba(255,255,255,0.7);min-height:100%;overflow-y:scroll;overflow-x:hidden">
+      <div class="background-image" style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/8.jpg')"></div>
+      <div style="height:10%"></div>
+      <div class="container">
+        <!-- InstanceBeginEditable name="EditRegion1" -->
+        <div class="row">
+          <ul id="myTab" class="nav nav-pills">
+            <li class="btn-warning">
+              <a href="#" data-toggle="tab" onclick="javascript:history.back();"><table style="color:#FFFFFF"><tbody><tr><td class="hidden-xs"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i></td><td>返回<br>上頁</td></tr></tbody></table></a>
+            </li>
+            <li class="active">
+              <a href="#base" data-toggle="tab">基本<br>資料</a>
+            </li>
+          </ul>
+          <!-- 保單基本資料 -->
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="base">
+              <form class="form-horizontal" role="form">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="input-group has-success">
+                      <span class="input-group-addon">
+                        <table style="color: #3a773a;">
+                          <tbody>
+                            <tr>
+                              <td>任</td>
+                            </tr>
+                            <tr>
+                              <td>意</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </span>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group">
+                            <span class="input-group-addon">保單號碼</span>
+                            <input name="insnumber" type="text" class="form-control " value="1000A03500815" required="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">保險起迄</span>
+                            <input name="strymd1" type="text" class="form-control" value="103/07/29~104/07/29" required="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">被保險人</span>
+                            <input name="insnumber" type="text" class="form-control " value="蔡淑玲" required="" autofocus="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">ID / 統編</span>
+                            <input name="insnumber" type="text" class="form-control " value="F228342572" required="" autofocus="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">出生日期</span>
+                            <input name="insnumber" type="text" class="form-control " value="60/04/08" required="" autofocus="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group has-success">
+                      <span class="input-group-addon">
+                        <table style="color: #3a773a;">
+                          <tbody>
+                            <tr>
+                              <td>強</td>
+                            </tr>
+                            <tr>
+                              <td>制</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </span>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon">強制證號</span>
+                            <input name="forcenumber" type="text" class="form-control " value="1000090092651" required="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">保險起迄</span>
+                            <input name="strymd2" type="text" class="form-control " value="103/07/29~104/07/29" required="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">被保險人</span>
+                            <input name="insnumber" type="text" class="form-control " value="蔡淑玲" required="" autofocus="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">ID / 統編</span>
+                            <input name="insnumber" type="text" class="form-control " value="F228342572" required="" autofocus="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="group1">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="input-group ">
+                            <span class="input-group-addon ">出生日期</span>
+                            <input name="insnumber" type="text" class="form-control " value="60/04/08" required="" autofocus="" readonly="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" id="group2">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">任意-牌照號碼</span>
+                          <input name="carnum1" type="text" class="form-control " value="9933-DC" required="" autofocus="" readonly="">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">強制-牌照號碼</span>
+                          <input name="carnum2" type="text" class="form-control " value="" required="" autofocus="">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">經辦人員</span>
+                          <div class="row" style="margin-left:0; margin-right:0;">
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input name="claimagent1" type="text" class="form-control " placeholder="輸入人員代號" value="32050" required="" autofocus="">
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input name="name1" type="text" class="form-control " value="許恒毅" disabled="disabled" size="5">
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input type="submit" class="form-control  btn-primary" name="Submit" value="查詢">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">理賠人員</span>
+                          <div class="row" style="margin-left:0; margin-right:0;">
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input name="claimagent2" type="text" class="form-control " placeholder="輸入人員代號" value="32050" required="" autofocus="">
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input name="name2" type="text" class="form-control " disabled="disabled" value="許恒毅" size="5">
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input type="submit" class="form-control  btn-primary" name="Submit" value="查詢">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" id="group2">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">
+                            <input type="checkbox" name="ckb1" value="checkbox" required="" autofocus="">任意賠案號碼</span>
+                          <input name="insnumber" type="text" class="form-control " value="" required="" autofocus="" readonly="">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">
+                            <input type="checkbox" name="ckb2" value="checkbox" required="" autofocus="">強制賠案號碼</span>
+                          <input name="insnumber" type="text" class="form-control " value="" required="" autofocus="" readonly="">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon" style="width:127px">出險日期</span>
+                          <div class="row" style="margin-left:0; margin-right:0;">
+                            <div class="col-sm-6 col-md-6 col-lg-6" style="padding-left:0; padding-right:0;">
+                              <input name="claimdate" type="text" class="form-control " value="" placeholder="Ex:1030101" required="" autofocus="">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6" style="padding-left:0; padding-right:0;">
+                              <input name="claimtime" type="text" class="form-control " value="" placeholder="Ex:080000" required="" autofocus="">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-md btn-danger btn-block " type="submit">
+                          <i class="fa fa-fw fa-laptop"></i>產生理賠案號</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6" style="margin-left:0; margin-right:0;">
+                    <div class="row" id="group2">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">駕 駛 人</span>
+                          <input name="driver" type="text" class="form-control " placeholder="駕駛人姓名" required="" autofocus="">
+                          <span class="input-group-addon " style="width:86px">
+                            <input type="checkbox" name="ckb1" value="checkbox">同被保人</span>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">駕駛人ID</span>
+                          <input name="driverid" type="text" class="form-control " placeholder="駕駛人ＩＤ" required="" autofocus="">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">出生日期</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="Ex:660101">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">婚　　姻</span>
+                          <div class="row form-control" style="margin-left:0; margin-right:0;">
+                            <input name="mariage" type="radio" value="2" checked="checked">未婚
+                            <input name="mariage" type="radio" value="1">已婚</div>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">行動電話</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="Ex:0911222333">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">聯絡電話(H)</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="Ex:0223913271">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">聯絡電話(O)</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="Ex:0223913271">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">聯絡地址</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="聯絡地址">
+                          <div class="row form-control input-group-addon" style="margin-left:0; margin-right:0;">
+                            <input type="checkbox" name="ckb1" value="checkbox">同被保人</div>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">損壞狀況</span>
+                          <select class="form-control ">
+                            <option value="2">分損</option>
+                            <option value="1">全損</option>
+                          </select>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">出險地區</span>
+                          <select class="form-control ">
+                            <option value="01">台北市</option>
+                            <option value="06">新北市</option>
+                            <option value="11">基隆市</option>
+                            <option value="12">宜蘭縣市</option>
+                            <option value="13">桃園縣市</option>
+                          </select>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">地　　點</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="事故地點說明">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">財車車牌</span>
+                          <input name="driver" type="text" class="form-control " placeholder="財車車牌" required="" autofocus="">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">送 件 人</span>
+                          <input name="driver" type="text" class="form-control " placeholder="送件人姓名" required="" autofocus="">
+                          <span class="input-group-addon label-primary " style="width:86px">
+                            <input type="checkbox" name="ckb1" value="checkbox">同駕駛人</span>
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">憲警單位</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="憲警單位">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">憲警姓名</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="憲警姓名">
+                        </div>
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">聯絡電話</span>
+                          <input name="insnumber" type="text" class="form-control " placeholder="聯絡電話">
+                        </div>
+                        <button class="btn btn-md btn-danger btn-block " type="submit">
+                          <i class="fa fa-fw fa-download"></i>儲存基本資料</button>
+                        <a href="phototype.html" class="btn btn-block btn-danger"><i class="fa fa-fw fa-camera"></i>建立查證影像</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- InstanceEndEditable -->
+        </div>
+      </div>
+      <!-- InstanceEnd -->
+      <script language="javascript">
+        $(document).ready(function() {
+                                                              $("table.responsive").each(function() {
+                                                                  var headers = [];
+                                                                  $(this).find("th").each(function () {
+                                                                      headers.push($(this).text().trim());
+                                                                  });
+                                                          
+                                                                  // Generate CSS string
+                                                                  var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                  var header, num;
+                                                                  for (var i in headers) {
+                                                                    header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                    num = parseInt(i,10)+1;
+                                                                    css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                  }
+                                                                  css_str += " }</style>";
+                                                                  $(css_str).appendTo("head");
+                                                              });
+                                                          });
+      </script>
+    </div>
+  
+
+</body></html>
