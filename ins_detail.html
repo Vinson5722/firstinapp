@@ -18,11 +18,11 @@
     <!-- InstanceBeginEditable name="head" -->
     <script type="text/JavaScript">
       <!--
-                                                                                                    function MM_goToURL() { //v3.0
-                                                                                                      var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-                                                                                                      for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-                                                                                                    }
-                                                                                                    //-->
+                                                                                                            function MM_goToURL() { //v3.0
+                                                                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                                                                            }
+                                                                                                            //-->
     </script>
     <!-- InstanceEndEditable -->
   </head><body>
@@ -57,9 +57,8 @@
     </div>
     <div class="section  text-center" style="background-color:rgba(255,255,255,0.7);min-height:100%;overflow:scroll">
       <div class="background-image" style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/8.jpg')"></div>
-      
-<div style="height:10%"></div>      
-<div class="container">
+      <div style="height:10%"></div>
+      <div class="container">
         <!-- InstanceBeginEditable name="EditRegion1" -->
         <div class="row">
           <ul id="myTab" class="nav nav-pills">
@@ -99,11 +98,11 @@
                     </tr>
                     <tr>
                       <th>被保險人姓名</th>
-                      <td>蔡淑玲</td>
+                      <td>蔡XX</td>
                     </tr>
                     <tr>
                       <th>生日</th>
-                      <td>60/04/08</td>
+                      <td>yy/mm/dd</td>
                     </tr>
                     <tr>
                       <th>使用人</th>
@@ -114,7 +113,7 @@
                     </tr>
                     <tr>
                       <th>車牌</th>
-                      <td>AAL-6520</td>
+                      <td>AAA-0000</td>
                     </tr>
                     <tr>
                       <th>廠牌名稱</th>
@@ -142,7 +141,7 @@
                     </tr>
                     <tr>
                       <th>引擎號碼</th>
-                      <td>QG18058945</td>
+                      <td>QG12345678</td>
                     </tr>
                   </tbody>
                 </table>
@@ -231,7 +230,7 @@
                       <td>01</td>
                       <td>已決</td>
                       <td>無責</td>
-                      <td>黃德楨</td>
+                      <td>黃XX</td>
                     </tr>
                     <tr>
                       <td>桃竹分公司</td>
@@ -242,7 +241,7 @@
                       <td>02</td>
                       <td>已決</td>
                       <td>有責</td>
-                      <td>黃德楨</td>
+                      <td>黃XX</td>
                     </tr>
                     <tr>
                       <td>桃竹分公司</td>
@@ -253,7 +252,7 @@
                       <td>03</td>
                       <td>已決</td>
                       <td>有責</td>
-                      <td>黃德楨</td>
+                      <td>黃XX</td>
                     </tr>
                   </tbody>
                 </table>
@@ -266,24 +265,24 @@
       <!-- InstanceEnd -->
       <script language="javascript">
         $(document).ready(function() {
-                                                                                                            $("table.responsive").each(function() {
-                                                                                                                var headers = [];
-                                                                                                                $(this).find("th").each(function () {
-                                                                                                                    headers.push($(this).text().trim());
+                                                                                                                    $("table.responsive").each(function() {
+                                                                                                                        var headers = [];
+                                                                                                                        $(this).find("th").each(function () {
+                                                                                                                            headers.push($(this).text().trim());
+                                                                                                                        });
+                                                                                                                
+                                                                                                                        // Generate CSS string
+                                                                                                                        var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                                                                        var header, num;
+                                                                                                                        for (var i in headers) {
+                                                                                                                          header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                                                                          num = parseInt(i,10)+1;
+                                                                                                                          css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                                                                        }
+                                                                                                                        css_str += " }</style>";
+                                                                                                                        $(css_str).appendTo("head");
+                                                                                                                    });
                                                                                                                 });
-                                                                                                        
-                                                                                                                // Generate CSS string
-                                                                                                                var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
-                                                                                                                var header, num;
-                                                                                                                for (var i in headers) {
-                                                                                                                  header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                                                                  num = parseInt(i,10)+1;
-                                                                                                                  css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                                                                }
-                                                                                                                css_str += " }</style>";
-                                                                                                                $(css_str).appendTo("head");
-                                                                                                            });
-                                                                                                        });
       </script>
     </div>
   
