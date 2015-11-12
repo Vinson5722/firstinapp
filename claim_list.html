@@ -75,15 +75,15 @@
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">被保險人</td>
-                    <td>蔡淑玲</td>
+                    <td>蔡XX</td>
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">被保險人ID</td>
-                    <td>F22****572</td>
+                    <td>A12****789</td>
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">牌照號碼</td>
-                    <td>AAL-6520</td>
+                    <td>AAA-0000</td>
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">保險起迄</td>
@@ -121,15 +121,15 @@
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">被保險人</td>
-                    <td>蔡淑玲</td>
+                    <td>蔡XX</td>
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">被保險人ID</td>
-                    <td>F22****572</td>
+                    <td>A12****789</td>
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">牌照號碼</td>
-                    <td>AAL-6520</td>
+                    <td>AAA-0000</td>
                   </tr>
                   <tr>
                     <td class="label-primary" style="color:#FFFFFF;">保險起迄</td>
@@ -156,24 +156,24 @@
         <!-- InstanceEnd -->
         <script language="javascript">
           $(document).ready(function() {
-                                                                                                                  $("table.responsive").each(function() {
-                                                                                                                      var headers = [];
-                                                                                                                      $(this).find("th").each(function () {
-                                                                                                                          headers.push($(this).text().trim());
-                                                                                                                      });
-                                                                                                              
-                                                                                                                      // Generate CSS string
-                                                                                                                      var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) { ";
-                                                                                                                      var header, num;
-                                                                                                                      for (var i in headers) {
-                                                                                                                        header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                                                                        num = parseInt(i,10)+1;
-                                                                                                                        css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                                                                      }
-                                                                                                                      css_str += " }</style>";
-                                                                                                                      $(css_str).appendTo("head");
-                                                                                                                  });
-                                                                                                              });
+                                                                                                                              $("table.responsive").each(function() {
+                                                                                                                                  var headers = [];
+                                                                                                                                  $(this).find("th").each(function () {
+                                                                                                                                      headers.push($(this).text().trim());
+                                                                                                                                  });
+                                                                                                                          
+                                                                                                                                  // Generate CSS string
+                                                                                                                                  var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) { ";
+                                                                                                                                  var header, num;
+                                                                                                                                  for (var i in headers) {
+                                                                                                                                    header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                                                                                    num = parseInt(i,10)+1;
+                                                                                                                                    css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                                                                                  }
+                                                                                                                                  css_str += " }</style>";
+                                                                                                                                  $(css_str).appendTo("head");
+                                                                                                                              });
+                                                                                                                          });
         </script>
       </div>
     </div>
