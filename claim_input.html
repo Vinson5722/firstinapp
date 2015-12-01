@@ -23,22 +23,22 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/JavaScript">
       <!--
-                                                            function MM_goToURL() { //v3.0
-                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-                                                            }
-                                                            //-->
+                                                                    function MM_goToURL() { //v3.0
+                                                                      var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                                      for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                                    }
+                                                                    //-->
     </script>
     <style>
       #myTabContent #group1 span {
-              width:86px;
-              }
-              #myTabContent #group2 span {
-              width:127px;
-              }
-              #myTabContent .input-group {
-              width:100%;
-              }
+                      width:86px;
+                      }
+                      #myTabContent #group2 span {
+                      width:127px;
+                      }
+                      #myTabContent .input-group {
+                      width:100%;
+                      }
     </style>
     <!-- InstanceEndEditable -->
   </head><body>
@@ -202,24 +202,20 @@
                     <div class="row" id="group2">
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="input-group has-warning">
-                          <span class="input-group-addon">任意-牌照號碼</span>
-                          <input name="carnum1" type="text" class="form-control " value="9933-DC" required="" autofocus="" readonly="">
-                        </div>
-                        <div class="input-group has-warning">
-                          <span class="input-group-addon">強制-牌照號碼</span>
-                          <input name="carnum2" type="text" class="form-control " value="" required="" autofocus="">
+                          <span class="input-group-addon">牌照號碼</span>
+                          <input name="carnum1" type="text" class="form-control" value="9933-DC" required="" autofocus="" readonly="">
                         </div>
                         <div class="input-group has-warning">
                           <span class="input-group-addon">經辦人員</span>
                           <div class="row" style="margin-left:0; margin-right:0;">
                             <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
-                              <input name="claimagent1" type="text" class="form-control " placeholder="輸入人員代號" value="32050" required="" autofocus="">
+                              <input name="claimagent1" type="text" class="form-control " placeholder="輸入人員代號" value="32050" required="" autofocus="" disabled="disabled">
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
+                              <input name="name1" type="text" value="32050" size="5" class="form-control ">
                             </div>
                             <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
                               <input name="name1" type="text" class="form-control " value="許恒毅" disabled="disabled" size="5">
-                            </div>
-                            <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
-                              <input type="submit" class="form-control  btn-primary" name="Submit" value="查詢">
                             </div>
                           </div>
                         </div>
@@ -227,13 +223,13 @@
                           <span class="input-group-addon">理賠人員</span>
                           <div class="row" style="margin-left:0; margin-right:0;">
                             <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
-                              <input name="claimagent2" type="text" class="form-control " placeholder="輸入人員代號" value="32050" required="" autofocus="">
+                              <input name="claimagent2" type="text" class="form-control " placeholder="輸入人員代號" value="32050" required="" autofocus="" disabled="disabled">
                             </div>
                             <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
-                              <input name="name2" type="text" class="form-control " disabled="disabled" value="許恒毅" size="5">
+                              <input name="name2" type="text" class="form-control " value="32050" size="5">
                             </div>
                             <div class="col-sm-4 col-md-4 col-lg-4" style="padding-left:0; padding-right:0;">
-                              <input type="submit" class="form-control  btn-primary" name="Submit" value="查詢">
+                              <input name="name2" type="text" class="form-control " value="許恒毅" disabled="disabled" size="5">
                             </div>
                           </div>
                         </div>
@@ -242,14 +238,8 @@
                     <div class="row" id="group2">
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="input-group has-warning">
-                          <span class="input-group-addon">
-                            <input type="checkbox" name="ckb1" value="checkbox" required="" autofocus="">任意賠案號碼</span>
-                          <input name="insnumber" type="text" class="form-control " value="" required="" autofocus="" readonly="">
-                        </div>
-                        <div class="input-group has-warning">
-                          <span class="input-group-addon">
-                            <input type="checkbox" name="ckb2" value="checkbox" required="" autofocus="">強制賠案號碼</span>
-                          <input name="insnumber" type="text" class="form-control " value="" required="" autofocus="" readonly="">
+                          <span class="input-group-addon">賠案號碼</span>
+                          <input name="carnum1" type="text" class="form-control " value="" required="" autofocus="" readonly="">
                         </div>
                         <div class="input-group has-warning">
                           <span class="input-group-addon" style="width:127px">出險日期</span>
@@ -270,6 +260,21 @@
                   <div class="col-sm-6 col-md-6 col-lg-6" style="margin-left:0; margin-right:0;">
                     <div class="row" id="group2">
                       <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="input-group has-warning">
+                          <span class="input-group-addon">參考案號</span>
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td style="width:100%">
+                                  <input name="driver" type="text" class="form-control" placeholder="參考案號" required="" autofocus="">
+                                </td>
+                                <td>
+                                  <input type="submit" class="form-control btn-primary" name="Submit" value="查詢" style="width:93px">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                         <div class="input-group has-warning">
                           <span class="input-group-addon">駕 駛 人</span>
                           <input name="driver" type="text" class="form-control " placeholder="駕駛人姓名" required="" autofocus="">
@@ -367,24 +372,24 @@
       <!-- InstanceEnd -->
       <script language="javascript">
         $(document).ready(function() {
-                                                              $("table.responsive").each(function() {
-                                                                  var headers = [];
-                                                                  $(this).find("th").each(function () {
-                                                                      headers.push($(this).text().trim());
+                                                                      $("table.responsive").each(function() {
+                                                                          var headers = [];
+                                                                          $(this).find("th").each(function () {
+                                                                              headers.push($(this).text().trim());
+                                                                          });
+                                                                  
+                                                                          // Generate CSS string
+                                                                          var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                          var header, num;
+                                                                          for (var i in headers) {
+                                                                            header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                            num = parseInt(i,10)+1;
+                                                                            css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                          }
+                                                                          css_str += " }</style>";
+                                                                          $(css_str).appendTo("head");
+                                                                      });
                                                                   });
-                                                          
-                                                                  // Generate CSS string
-                                                                  var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
-                                                                  var header, num;
-                                                                  for (var i in headers) {
-                                                                    header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                    num = parseInt(i,10)+1;
-                                                                    css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                  }
-                                                                  css_str += " }</style>";
-                                                                  $(css_str).appendTo("head");
-                                                              });
-                                                          });
       </script>
     </div>
   
