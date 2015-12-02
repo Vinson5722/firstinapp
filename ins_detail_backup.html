@@ -18,11 +18,11 @@
     <!-- InstanceBeginEditable name="head" -->
     <script type="text/JavaScript">
       <!--
-                                                                                                                    function MM_goToURL() { //v3.0
-                                                                                                                      var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-                                                                                                                      for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-                                                                                                                    }
-                                                                                                                    //-->
+                                                                                                            function MM_goToURL() { //v3.0
+                                                                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                                                                            }
+                                                                                                            //-->
     </script>
     <!-- InstanceEndEditable -->
   </head><body>
@@ -149,20 +149,6 @@
             </div>
             <!-- 保單車籍資料 -->
             <div class="tab-pane fade" id="ins-m">
-              <div>
-                <table class="table table-bordered" style="max-width:400px">
-                  <thead>
-                    <tr>
-                      <th class="bg-primary" style="width:120px">備註二</th>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th class="bg-primary" style="width:120px">批改狀態</th>
-                      <td>加保</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
               <div class="table-responsive">
                 <table class="table table-condensed table-bordered table-striped table-hover">
                   <thead>
@@ -223,22 +209,50 @@
                 <table class="table table-condensed table-bordered table-striped table-hover ">
                   <thead>
                     <tr class="bg-success">
-                      <th>出險日期</th>
-                      <th>賠案編號</th>
-                      <th>結案日期</th>
-                      <th>保險種類</th>
+                      <th>受理單位</th>
+                      <th>險種</th>
+                      <th>理賠案號</th>
+                      <th>出險日</th>
+                      <th>受理日</th>
+                      <th>賠付次數</th>
+                      <th>狀態</th>
+                      <th>肇責</th>
                       <th>理賠人員</th>
-                      <th>保險金額</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>104/05/19</td>
-                      <td>103704A00709</td>
-                      <td>104/06/23</td>
-                      <td>01A</td>
-                      <td>吳鉉泉</td>
-                      <td>17,000</td>
+                      <td>桃竹分公司</td>
+                      <td></td>
+                      <td>101002A00345</td>
+                      <td>1020201</td>
+                      <td>1020201</td>
+                      <td>01</td>
+                      <td>已決</td>
+                      <td>無責</td>
+                      <td>黃XX</td>
+                    </tr>
+                    <tr>
+                      <td>桃竹分公司</td>
+                      <td></td>
+                      <td>101002A00346</td>
+                      <td>1020201</td>
+                      <td>1020201</td>
+                      <td>02</td>
+                      <td>已決</td>
+                      <td>有責</td>
+                      <td>黃XX</td>
+                    </tr>
+                    <tr>
+                      <td>桃竹分公司</td>
+                      <td></td>
+                      <td>101002A00347</td>
+                      <td>1020201</td>
+                      <td>1020201</td>
+                      <td>03</td>
+                      <td>已決</td>
+                      <td>有責</td>
+                      <td>黃XX</td>
                     </tr>
                   </tbody>
                 </table>
@@ -251,24 +265,24 @@
       <!-- InstanceEnd -->
       <script language="javascript">
         $(document).ready(function() {
-                                                                                                                            $("table.responsive").each(function() {
-                                                                                                                                var headers = [];
-                                                                                                                                $(this).find("th").each(function () {
-                                                                                                                                    headers.push($(this).text().trim());
-                                                                                                                                });
-                                                                                                                        
-                                                                                                                                // Generate CSS string
-                                                                                                                                var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
-                                                                                                                                var header, num;
-                                                                                                                                for (var i in headers) {
-                                                                                                                                  header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                                                                                  num = parseInt(i,10)+1;
-                                                                                                                                  css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                                                                                }
-                                                                                                                                css_str += " }</style>";
-                                                                                                                                $(css_str).appendTo("head");
-                                                                                                                            });
+                                                                                                                    $("table.responsive").each(function() {
+                                                                                                                        var headers = [];
+                                                                                                                        $(this).find("th").each(function () {
+                                                                                                                            headers.push($(this).text().trim());
                                                                                                                         });
+                                                                                                                
+                                                                                                                        // Generate CSS string
+                                                                                                                        var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                                                                        var header, num;
+                                                                                                                        for (var i in headers) {
+                                                                                                                          header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                                                                          num = parseInt(i,10)+1;
+                                                                                                                          css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                                                                        }
+                                                                                                                        css_str += " }</style>";
+                                                                                                                        $(css_str).appendTo("head");
+                                                                                                                    });
+                                                                                                                });
       </script>
     </div>
   
