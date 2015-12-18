@@ -23,22 +23,22 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/JavaScript">
       <!--
-                                                                    function MM_goToURL() { //v3.0
-                                                                      var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-                                                                      for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-                                                                    }
-                                                                    //-->
+                                                                            function MM_goToURL() { //v3.0
+                                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                                            }
+                                                                            //-->
     </script>
     <style>
       #myTabContent #group1 span {
-                      width:86px;
-                      }
-                      #myTabContent #group2 span {
-                      width:127px;
-                      }
-                      #myTabContent .input-group {
-                      width:100%;
-                      }
+                              width:86px;
+                              }
+                              #myTabContent #group2 span {
+                              width:127px;
+                              }
+                              #myTabContent .input-group {
+                              width:100%;
+                              }
     </style>
     <!-- InstanceEndEditable -->
   </head><body>
@@ -281,7 +281,20 @@
                         </div>
                         <div class="input-group has-warning">
                           <span class="input-group-addon">憲警單位</span>
-                          <input name="insnumber" type="text" class="form-control " placeholder="憲警單位">
+                          <select class="form-control ">
+                            <option value="01">分局代號</option>
+                            <option value="06">WG01-台北市警局交通大隊</option>
+                            <option value="11">WM00-中山分局</option>
+                            <option value="12">WN00-大安分局</option>
+                            <option value="13">WO00-中正第一分局</option>
+                          </select>
+                          <select class="form-control ">
+                            <option value="01">派出所代號</option>
+                            <option value="06">WM00-中山交通隊</option>
+                            <option value="11">WM01-中山一派出所</option>
+                            <option value="12">WM02-中山二派出所</option>
+                            <option value="13">WM03-圓山派出所</option>
+                          </select>
                         </div>
                         <div class="input-group has-warning">
                           <span class="input-group-addon">憲警姓名</span>
@@ -307,24 +320,24 @@
       <!-- InstanceEnd -->
       <script language="javascript">
         $(document).ready(function() {
-                                                                      $("table.responsive").each(function() {
-                                                                          var headers = [];
-                                                                          $(this).find("th").each(function () {
-                                                                              headers.push($(this).text().trim());
+                                                                              $("table.responsive").each(function() {
+                                                                                  var headers = [];
+                                                                                  $(this).find("th").each(function () {
+                                                                                      headers.push($(this).text().trim());
+                                                                                  });
+                                                                          
+                                                                                  // Generate CSS string
+                                                                                  var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                                  var header, num;
+                                                                                  for (var i in headers) {
+                                                                                    header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                                    num = parseInt(i,10)+1;
+                                                                                    css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                                  }
+                                                                                  css_str += " }</style>";
+                                                                                  $(css_str).appendTo("head");
+                                                                              });
                                                                           });
-                                                                  
-                                                                          // Generate CSS string
-                                                                          var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
-                                                                          var header, num;
-                                                                          for (var i in headers) {
-                                                                            header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                            num = parseInt(i,10)+1;
-                                                                            css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                          }
-                                                                          css_str += " }</style>";
-                                                                          $(css_str).appendTo("head");
-                                                                      });
-                                                                  });
       </script>
     </div>
   

@@ -18,11 +18,11 @@
     <!-- InstanceBeginEditable name="head" -->
     <script type="text/JavaScript">
       <!--
-                                                                                                                            function MM_goToURL() { //v3.0
-                                                                                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-                                                                                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-                                                                                                                            }
-                                                                                                                            //-->
+                                                                                                                                    function MM_goToURL() { //v3.0
+                                                                                                                                      var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                                                                                                      for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                                                                                                    }
+                                                                                                                                    //-->
     </script>
     <!-- InstanceEndEditable -->
   </head><body>
@@ -223,22 +223,31 @@
                 <table class="table table-condensed table-bordered table-striped table-hover ">
                   <thead>
                     <tr class="bg-success">
-                      <th>出險日期</th>
-                      <th>賠案編號</th>
-                      <th>結案日期</th>
-                      <th>保險種類</th>
-                      <th>理賠人員</th>
-                      <th>賠款金額</th>
+                      <th>理賠案號</th>
+                      <th>險種別</th>
+                      <th>已/未決</th>
+                      <th>肇責</th>
+                      <th>賠款次數</th>
+                      <th>會計作帳日</th>
+                      <th>賠款金額</th><th>理賠人員</th><th>出險日期</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>104/05/19</td>
-                      <td>103704A00709</td>
-                      <td>104/06/23</td>
-                      <td>01A</td>
-                      <td>吳鉉泉</td>
-                      <td>17,000</td>
+                      <td>100004A04261</td>
+                      <td>31 第三人責任險傷害責任</td>
+                      <td>未決</td>
+                      <td></td>
+                      <td>00</td>
+                      <td>0</td><td>0</td><td>46319 陳志遠</td><td>1041206</td>
+                    </tr>
+                    <tr>
+                      <td>100004A04261</td>
+                      <td>32 第三人責任險財損責任</td>
+                      <td>未決</td>
+                      <td></td>
+                      <td>00</td>
+                      <td>0</td><td>0</td><td>46319 陳志遠</td><td>1041206</td>
                     </tr>
                   </tbody>
                 </table>
@@ -251,24 +260,24 @@
       <!-- InstanceEnd -->
       <script language="javascript">
         $(document).ready(function() {
-                                                                                                                                    $("table.responsive").each(function() {
-                                                                                                                                        var headers = [];
-                                                                                                                                        $(this).find("th").each(function () {
-                                                                                                                                            headers.push($(this).text().trim());
+                                                                                                                                            $("table.responsive").each(function() {
+                                                                                                                                                var headers = [];
+                                                                                                                                                $(this).find("th").each(function () {
+                                                                                                                                                    headers.push($(this).text().trim());
+                                                                                                                                                });
+                                                                                                                                        
+                                                                                                                                                // Generate CSS string
+                                                                                                                                                var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                                                                                                var header, num;
+                                                                                                                                                for (var i in headers) {
+                                                                                                                                                  header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                                                                                                  num = parseInt(i,10)+1;
+                                                                                                                                                  css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                                                                                                }
+                                                                                                                                                css_str += " }</style>";
+                                                                                                                                                $(css_str).appendTo("head");
+                                                                                                                                            });
                                                                                                                                         });
-                                                                                                                                
-                                                                                                                                        // Generate CSS string
-                                                                                                                                        var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
-                                                                                                                                        var header, num;
-                                                                                                                                        for (var i in headers) {
-                                                                                                                                          header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                                                                                          num = parseInt(i,10)+1;
-                                                                                                                                          css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                                                                                        }
-                                                                                                                                        css_str += " }</style>";
-                                                                                                                                        $(css_str).appendTo("head");
-                                                                                                                                    });
-                                                                                                                                });
       </script>
     </div>
   
