@@ -18,11 +18,11 @@
     <!-- InstanceBeginEditable name="head" -->
     <script type="text/JavaScript">
       <!--
-                                                                                                                                            function MM_goToURL() { //v3.0
-                                                                                                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-                                                                                                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-                                                                                                                                            }
-                                                                                                                                            //-->
+                                                                                                                                                            function MM_goToURL() { //v3.0
+                                                                                                                                                              var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+                                                                                                                                                              for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+                                                                                                                                                            }
+                                                                                                                                                            //-->
     </script>
     <!-- InstanceEndEditable -->
   </head><body>
@@ -268,24 +268,24 @@
       <!-- InstanceEnd -->
       <script language="javascript">
         $(document).ready(function() {
-                                                                                                                                                    $("table.responsive").each(function() {
-                                                                                                                                                        var headers = [];
-                                                                                                                                                        $(this).find("th").each(function () {
-                                                                                                                                                            headers.push($(this).text().trim());
-                                                                                                                                                        });
-                                                                                                                                                
-                                                                                                                                                        // Generate CSS string
-                                                                                                                                                        var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
-                                                                                                                                                        var header, num;
-                                                                                                                                                        for (var i in headers) {
-                                                                                                                                                          header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
-                                                                                                                                                          num = parseInt(i,10)+1;
-                                                                                                                                                          css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
-                                                                                                                                                        }
-                                                                                                                                                        css_str += " }</style>";
-                                                                                                                                                        $(css_str).appendTo("head");
-                                                                                                                                                    });
-                                                                                                                                                });
+                                                                                                                                                                    $("table.responsive").each(function() {
+                                                                                                                                                                        var headers = [];
+                                                                                                                                                                        $(this).find("th").each(function () {
+                                                                                                                                                                            headers.push($(this).text().trim());
+                                                                                                                                                                        });
+                                                                                                                                                                
+                                                                                                                                                                        // Generate CSS string
+                                                                                                                                                                        var css_str = "<style>@media only screen and (max-width: 760px), (min-device-width: 400px) and (max-device-width: 1024px) { ";
+                                                                                                                                                                        var header, num;
+                                                                                                                                                                        for (var i in headers) {
+                                                                                                                                                                          header = headers[i].replace(/([\\"])/g, "\\$1").replace(/\n/g, " ");
+                                                                                                                                                                          num = parseInt(i,10)+1;
+                                                                                                                                                                          css_str += "table.responsive td:nth-of-type("+num+"):before { content: \""+header+"\"; }" + "\n";
+                                                                                                                                                                        }
+                                                                                                                                                                        css_str += " }</style>";
+                                                                                                                                                                        $(css_str).appendTo("head");
+                                                                                                                                                                    });
+                                                                                                                                                                });
       </script>
     </div>
   

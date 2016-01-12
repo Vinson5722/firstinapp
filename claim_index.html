@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <script type="text/javascript" src="js/jquery.2.0.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.3.3.4.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="others/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/pingendov4.css" rel="stylesheet" type="text/css"-->
     <link href="css/pingendo.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="icon/firstins.ico">
@@ -45,7 +45,7 @@
       <!--/.nav-collapse -->
     </div>
     <div class="section  text-center" style="min-height: 100%; overflow: scroll; background-color: rgba(255, 255, 255, 0.701961);">
-      <div style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/8.jpg')" class="background-image background-image-fixed"></div>
+      <div style="background-image : url('others/800x600/8.jpg')" class="background-image background-image-fixed"></div>
       <div style="height:10%"></div>
       <div class="container" style="width:80%;">
         <div class="row">
@@ -64,18 +64,17 @@
                       </span>
                       <select name="select" class="form-control">
                         <option selected="">--請選擇查詢條件--</option>
-                        <option>理賠案號</option>
-                        <option>保單號碼</option>
-                        <option>車牌號碼</option>
-                        <option>被保險人ID/統編</option>
-                        <option>被保險人名稱</option>
+                        <option value="1">保單號碼</option>
+                        <option value="2">車牌號碼</option>
+                        <option value="3">被保險人ID/統編</option>
+                        <option value="4">被保險人名稱</option>
                       </select>
                     </div>
                     <div class="input-group" style="padding:2px">
                       <span class="input-group-addon">
                         <i class="fa fa-fw fa-pencil-square-o"></i>
                       </span>
-                      <input type="text" class="form-control" placeholder="請輸入條件" name="text1">
+                      <input type="text" class="form-control" placeholder="請輸入條件" name="text1" style="text-transform:uppercase">
                     </div>
                   </div>
                 </div>
@@ -105,6 +104,14 @@
       <!-- InstanceEndEditable -->
     </div>
     <!-- InstanceEnd -->
+    <script type="text/javascript" language="JavaScript">
+      function search() {
+              var searchType = $('#searchType').val();
+              var condition = $('#condition').val();
+              var date = $('#date').val();
+              androidFirstIn.requestSearchInsurance(searchType, condition, date);
+            };
+    </script>
   
 
 </body></html>
